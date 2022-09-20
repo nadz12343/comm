@@ -22,8 +22,6 @@ export default function RoadBike() {
          <div className="container flex justify-center w-screen min-h-0 p-0 mx-auto overflow-hidden">
              <div className='grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                  {bikes}
-                 {bikes}
-                 {bikes}
              </div>
          </div> 
  
