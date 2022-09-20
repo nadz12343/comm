@@ -46,7 +46,7 @@ export default function Product({product}) {
 
      const sidebar = (
             <div className= {styles.sidebar}>
-                {imgUrls.map((imgUrl, index) => <img src = {imgUrl} id={`sidebarImg${index}`} className={styles.optionImg} onClick={() => switchImage(index)}/>)}
+                {imgUrls.map((imgUrl, index) => <img key = {index} src = {imgUrl} id={`sidebarImg${index}`} className={styles.optionImg} onClick={() => switchImage(index)}/>)}
             </div>
             )
         
