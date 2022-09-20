@@ -25,7 +25,7 @@ export const getStaticProps = async (context) => {
 
 export default function Product({product}) {
 
-    const [mainImg, setMainImg] = useState(<Image src = {product.imgUrls[0]} layout = "fixed" width = {800} height = {500}/>)
+    const [mainImg, setMainImg] = useState(<Image key = {product.id} src = {product.imgUrls[0]} layout = "fixed" width = {800} height = {500}/>)
     
     const imgUrls = product.imgUrls
     function switchImage(index) {
