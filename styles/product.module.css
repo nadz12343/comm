@@ -1,0 +1,31 @@
+
+.browseContainer{
+    margin-top: 60px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.sidebar {
+    width: 100px;
+    height: 500px;
+    margin-left: 30px;
+    overflow: scroll;
+    
+}
+
+.mainImg{
+    margin-left: 150px;
+}
+
+.optionImg{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.sidebar > img {
+    cursor: pointer;
+}

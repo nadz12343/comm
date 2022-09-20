@@ -1,0 +1,18 @@
+import styles from "../styles/mountain-bikes.module.css"
+import Link from "next/link"
+import data from "../data.js"
+
+export default function ProductCard({product}) {
+    return (                     
+    <div className={styles.productCard}>
+        <h2>{product.name}</h2>
+        <img src = {product.imgUrl} className={styles.productImg}/>
+        <h3>{`£${product.price}`}</h3>
+        <button>
+            <Link href = {`/product/${product.id}`}>
+                View more information
+            </Link>
+        </button>
+    </div>
+    )
+}
