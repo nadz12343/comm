@@ -41,7 +41,7 @@ export default function Product({product}) {
             }
 
         }
-        setMainImg(<Image src = {imgUrls[index]} layout = "fixed" width = {800} height = {500}/>)
+        setMainImg(<Image key = {product.id} src = {imgUrls[index]} layout = "fixed" width = {800} height = {500}/>)
     }
 
      const sidebar = (
